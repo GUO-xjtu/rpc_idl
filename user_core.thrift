@@ -1,4 +1,4 @@
-namespace go register
+namespace go user
 
 struct RegisterRequest {
     1: required string name;
@@ -10,6 +10,6 @@ struct RegisterResponse {
     1: required string user_id;
 }
 
-service Register {
+service User {
     RegisterResponse UserRegister(1: RegisterRequest req);
 }
